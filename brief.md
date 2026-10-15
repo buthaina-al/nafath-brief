@@ -28,5 +28,8 @@ A Software Bill of Materials (SBOM) is a formal inventory of software components
 
 Source: NTIA, The Minimum Elements for an SBOM — https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 ## Misconception in My Track
+A common misconception is that deploying RPKI completely prevents BGP route hijacking. In reality, RPKI Route Origin Validation checks whether the autonomous system originating a route is authorized to announce the prefix; it does not validate every autonomous system in the full AS path. Therefore, some routing attacks may remain undetected. Network operators should combine RPKI with careful routing policies, monitoring, and additional security measures.
 
+Source: RFC 6811, BGP Prefix Origin Validation — https://www.rfc-editor.org/rfc/rfc6811.html
 ## Open Question
+How effectively can network operators combine RPKI Route Origin Validation with AS-path security and real-time routing monitoring to detect attacks that origin validation alone cannot prevent?
