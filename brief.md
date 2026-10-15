@@ -16,11 +16,17 @@ The OWASP Mobile Application Security Verification Standard (MASVS) defines secu
 
 Source: OWASP MASVS — https://mas.owasp.org/MASVS/02-Frontispiece/
 ## Networking
+BGP route hijacking occurs when an autonomous system announces incorrect or unauthorized routes, potentially redirecting internet traffic through an unintended network or preventing it from reaching its destination. Resource Public Key Infrastructure (RPKI) supports Route Origin Validation by checking whether an autonomous system is authorized to announce an IP prefix. Operators can use this information to reject invalid routes. However, RPKI origin validation does not authenticate every autonomous system along the full route.
 
+Source: RFC 6811, BGP Prefix Origin Validation — https://www.rfc-editor.org/rfc/rfc6811.html
 ## Cybersecurity
+Log4Shell (CVE-2021-44228) was a critical vulnerability in Apache Log4j 2 that could allow remote code execution under vulnerable conditions. The vulnerability received a CVSS score of 10.0. Organizations should identify applications using affected versions, upgrade to fixed versions recommended by Apache, and verify that vulnerable components have been removed or updated. This incident highlights why software dependencies must be tracked and patched promptly.
 
+Source: CISA, Mitigating Log4Shell — https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a
 ## Data
+A Software Bill of Materials (SBOM) is a formal inventory of software components and their relationships. Important fields include the supplier, component name, version, unique identifiers, dependency relationships, author, and timestamp. An SBOM helps organizations identify potentially affected components when vulnerabilities are disclosed and supports software inventory management. However, it does not prove that software is safe; records must remain current and support ongoing vulnerability management.
 
+Source: NTIA, The Minimum Elements for an SBOM — https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 ## Misconception in My Track
 
 ## Open Question
